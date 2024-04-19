@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <form class="grid" onsubmit="enviar(event)">
+        <div class="main-box">
+            <h1 class="box-title">Todo List</h2>
+            <div class="box-functions">
+                <input id="todo" class="box-input" type="text" placeholder="Digite uma tarefa..." required>
+                <button class="box-button" type="submit">Adicionar Tarefa</button>
+            </div>
+        </div>
+        <ul id="listaItens"></ul>
+        <footer aria-label="Rodapé">
+            <p aria-label="Copyright">
+              &copy; 2024 Todo List
+            </p>
+        </footer>
+    </form>
+</body>
+<script src="index.js"></script>
+</html>
